@@ -1,2 +1,4 @@
+*.mp4 filter=lfs diff=lfs merge=lfs -text
+*.MOV filter=lfs diff=lfs merge=lfs -text
 public/Ateliê[[:space:]]Skema_v2.mp4 filter=lfs diff=lfs merge=lfs -text
 public/Skema[[:space:]]Fashion[[:space:]]Show[[:space:]]vídeo[[:space:]]final[[:space:]].MOV filter=lfs diff=lfs merge=lfs -text
