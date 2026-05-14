@@ -1,16 +1,9 @@
-# React + Vite
+  Ateliê Skema is a digital portfolio developed to represent the identity, positioning, and creative
+  production of a university fashion and luxury association. The website was designed to showcase the
+  project’s runway shows, events, backstage content, team structure, and institutional presence through a
+  refined and editorial visual language.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+  Built with a strong focus on presentation, clarity, and brand consistency, the platform translates the
+  atmosphere of the fashion and luxury market into a modern web experience. More than a showcase, the project
+  functions as a structured digital presence that strengthens visibility, communicates purpose, and highlights
+  the people and initiatives behind Ateliê Skema.
