@@ -1,3 +1,18 @@
+const runwayGallery2023 = Array.from(
+  { length: 7 },
+  (_, index) => `/runway/desfile-2023/desfile-2023-${String(index + 1).padStart(2, "0")}.jpeg`,
+);
+
+const runwayGallery2024 = Array.from(
+  { length: 10 },
+  (_, index) => `/runway/desfile-2024/desfile-2024-${String(index + 1).padStart(2, "0")}.jpeg`,
+);
+
+const runwayGallery2025 = Array.from(
+  { length: 8 },
+  (_, index) => `/runway/desfile-2025/desfile-2025-${String(index + 1).padStart(2, "0")}.jpeg`,
+);
+
 export const atelieSkemaModel = {
   fontStyles: `
     @font-face {
@@ -25,7 +40,7 @@ export const atelieSkemaModel = {
     numero: "+55 31 99629-2120",
     primaryButtonClasses: "bg-[#c9b98a] hover:bg-[#b6a874] text-white",
   },
-  heroImage: "/skema.landingPage.png",
+  heroImage: "/home/skema-landing-page.png",
   runwayShows: [
     {
       id: "desfile-2023",
@@ -34,16 +49,9 @@ export const atelieSkemaModel = {
       location: "Mercado de Origem",
       description:
         "In 2023, we organized our first runway show, held on the rooftop of Mercado de Origem. The opportunity came unexpectedly, just one month before the date, which pushed us to structure the entire project within a very short timeline. Even so, we managed to build an exceptionally well-organized event, gained strong recognition, and learned immensely from every stage of the process. Behind the scenes, our beauty team prepared the 30 models selected through an experienced casting process. Notable brands such as Anna Barroso, Ju Pettit, Espaço Deluxe, and Patrícia Motta presented their collections, captivating the audience with exclusive, high-quality pieces. The show was an absolute success, marked by sophistication, innovation, and above all, the teamwork that made everything possible.",
-      coverImage: "/desfile2023Card.png",
+      coverImage: "/runway/cards/desfile-2023-card.png",
       coverImagePosition: "center 18%",
-      gallery: [
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
-      ],
+      gallery: runwayGallery2023,
     },
     {
       id: "desfile-2024",
@@ -52,15 +60,8 @@ export const atelieSkemaModel = {
       location: "Espaço Centoequatro",
       description:
         "In November 2024, we held our second runway show, a challenging yet extraordinary experience. This time, we had more experience and knew where to begin, which allowed us to structure the project with greater confidence and vision. The result was incredible and far beyond what we had imagined, bringing together more than 300 guests, 8 highly relevant partner brands, and a dedicated team of 25 Ateliê members who helped turn this dream into reality. The event took place at Espaço Centoequatro, an iconic venue in Belo Horizonte that brought even more strength and symbolism to the night. With the presence of standout brands and the scale of the event, it became clear how far Ateliê can go, consolidating our identity as a platform for fashion, creativity, innovation, and excellence.",
-      coverImage: "/desfile2024Card.png",
-      gallery: [
-        "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-      ],
+      coverImage: "/runway/cards/desfile-2024-card.png",
+      gallery: runwayGallery2024,
     },
     {
       id: "desfile-2025",
@@ -69,15 +70,8 @@ export const atelieSkemaModel = {
       location: "Casarão Eventos",
       description:
         "In November 2025, Ateliê held the third edition of its runway show, solidifying its presence in the fashion and creative scene. After two remarkable editions, the project matured, expanded its reach, and strengthened its positioning. With more than 10 brands, around 350 guests, and a carefully planned infrastructure, the event took place at Casarão Eventos, bringing together creativity, innovation, and purpose in a single experience. In this edition, the focus was to give visibility to brands that were still in the process of consolidation but already aligned with Ateliê’s DNA. More than a runway, the show established itself as a space for connection, strengthening brands and boosting the creative ecosystem around it.",
-      coverImage: "/desfile2025Card.png .png",
-      gallery: [
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-      ],
+      coverImage: "/runway/cards/desfile-2025-card.png",
+      gallery: runwayGallery2025,
     },
     {
       id: "desfile-2026",
@@ -105,11 +99,11 @@ export const atelieSkemaModel = {
     },
     {
       type: "video",
-      src: "/Ateliê Skema_v2.mp4",
+      src: "/backstage/atelie-skema-v2.mp4",
     },
     {
       type: "video",
-      src: "/Skema Fashion Show vídeo final .MOV",
+      src: "/backstage/skema-fashion-show-video-final.mov",
     },
   ],
   conceptItems: [
@@ -139,7 +133,7 @@ export const atelieSkemaModel = {
       location: "Belo Horizonte",
       description:
         "In partnership with Kiosk, Ateliê developed an activation connecting branding, fashion, and community experience around the fitness and lifestyle universe.",
-      image: "/foto042.jpg.jpeg",
+      image: "/events/kiosk-fit-club.jpeg",
       gallery: [
         "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
@@ -153,7 +147,7 @@ export const atelieSkemaModel = {
       location: "Campus Event",
       description:
         "A conversation with Rafa Abritta and Luiza Uluru about fashion and gastronomy, presenting concepts and correlations between these two subjects.",
-      image: "/headTalkCard.png",
+      image: "/events/headtalk-card.png",
       gallery: [
         "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
         "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
@@ -192,32 +186,28 @@ export const atelieSkemaModel = {
       ],
     },
   ],
-  teamPhoto: "/time.png",
-  organizersPhoto: "/diretoras.jpeg",
+  teamPhoto: "/team/time.png",
+  organizersPhoto: "/team/diretoras.jpeg",
   instagramGrid: [
     {
-      image: "/insta-1.png",
+      image: "/instagram/insta-1.png",
       postUrl: "https://www.instagram.com/p/DPMeejPDnBS/?img_index=1",
     },
     {
-      image: "/insta-2.png",
+      image: "/instagram/insta-2.png",
       postUrl: "https://www.instagram.com/p/DVE5Vq8Dmbo/?img_index=1",
     },
     {
-      image: "/insta-3.png",
+      image: "/instagram/insta-3.png",
       postUrl: "https://www.instagram.com/p/DPMXz_gjhVT/?img_index=1",
     },
     {
-      image: "/insta-4.png",
+      image: "/instagram/insta-4.png",
       postUrl: "https://www.instagram.com/p/DPRxxckDkZw/?img_index=1",
     },
     {
-      image: "/insta-5.png",
+      image: "/instagram/insta-5.png",
       postUrl: "https://www.instagram.com/p/DPj0orFicPC/?img_index=1",
-    },
-    {
-      image: "/insta-6.png",
-      postUrl: "https://www.instagram.com/atelieskema/",
     },
   ],
   theme: {

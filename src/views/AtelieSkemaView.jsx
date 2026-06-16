@@ -48,7 +48,7 @@ export default function AtelieSkemaView({
               ← Back to Home
             </button>
             <img
-              src="/logo.png"
+              src="/brand/logo.png"
               alt="Ateliê Skema"
               className="h-20 object-contain md:h-24"
             />
@@ -141,7 +141,7 @@ export default function AtelieSkemaView({
               ← Back to Home
             </button>
             <img
-              src="/logo.png"
+              src="/brand/logo.png"
               alt="Ateliê Skema"
               className="h-20 object-contain md:h-24"
             />
@@ -226,7 +226,7 @@ export default function AtelieSkemaView({
         <header className="fixed left-0 right-0 top-0 z-50 border-b border-[#e5dfd6] bg-[#f3ede4]/90 backdrop-blur-sm">
           <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-3">
             <img
-              src="/logo.png"
+              src="/brand/logo.png"
               alt="Ateliê Skema"
               className="h-20 object-contain md:h-24"
             />
@@ -300,7 +300,7 @@ export default function AtelieSkemaView({
           <div className="mx-auto grid max-w-6xl items-center gap-16 px-6 md:grid-cols-2">
             <div className="group aspect-[4/5] overflow-hidden rounded-xl">
               <img
-                src="/home.png"
+                src="/home/home.png"
                 alt="Projeto"
                 className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
@@ -693,7 +693,7 @@ export default function AtelieSkemaView({
 
                 <div className="group overflow-hidden rounded-[28px] bg-[#eadfc2] shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
                   <img
-                    src="/marketingTeam.jpeg"
+                    src="/team/marketing-team.jpeg"
                     alt="Marketing Team"
                     className="h-[250px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
@@ -720,7 +720,7 @@ export default function AtelieSkemaView({
 
                 <div className="group overflow-hidden rounded-[28px] bg-[#eadfc2] shadow-[0_12px_30px_rgba(0,0,0,0.08)]">
                   <img
-                    src="/comunicacaoteam.jpeg"
+                    src="/team/comunicacao-team.jpeg"
                     alt="Communication Team"
                     className="h-[250px] w-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
