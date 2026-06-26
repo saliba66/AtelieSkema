@@ -12,6 +12,10 @@ const runwayGallery2025 = Array.from(
   { length: 8 },
   (_, index) => `/runway/desfile-2025/desfile-2025-${String(index + 1).padStart(2, "0")}.jpeg`,
 );
+const eventUluruGallery = Array.from(
+  { length: 11 },
+  (_, index) => `/events/evento-uluru/evento-uluru-${String(index + 1).padStart(2, "0")}.jpeg`,
+);
 
 export const atelieSkemaModel = {
   fontStyles: `
@@ -73,24 +77,24 @@ export const atelieSkemaModel = {
       coverImage: "/runway/cards/desfile-2025-card.png",
       gallery: runwayGallery2025,
     },
-    {
-      id: "desfile-2026",
-      title: "4th Runway Show",
-      year: "2026",
-      location: "Luxury Hall",
-      description:
-        "Conceived as the continuation of Ateliê’s growth, the 2026 runway show represents ambition, sophistication, and an expanded impact. The proposal combines fashion, luxury, and entrepreneurship in a high-level experience, bringing the association even closer to the market and strengthening its institutional presence. The project reflects Ateliê’s vision for the future and its potential to establish itself as a university reference in the sector.",
-      coverImage:
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-      gallery: [
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-      ],
-    },
+//    {
+//      id: "desfile-2026",
+//      title: "4th Runway Show",
+//      year: "2026",
+//      location: "Luxury Hall",
+//      description:
+//        "Conceived as the continuation of Ateliê’s growth, the 2026 runway show represents ambition, sophistication, and an expanded impact. The proposal combines fashion, luxury, and entrepreneurship in a high-level experience, bringing the association even closer to the market and strengthening its institutional presence. The project reflects Ateliê’s vision for the future and its potential to establish itself as a university reference in the sector.",
+//      coverImage:
+//        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+//      gallery: [
+//        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
+//      ],
+//    },
   ],
   backstageMedia: [
     {
@@ -127,20 +131,20 @@ export const atelieSkemaModel = {
     },
   ],
   events: [
-    {
-      id: "event-kiosk-fit-club-2025",
-      title: "Kiosk Fit Club 2025",
-      location: "Belo Horizonte",
-      description:
-        "In partnership with Kiosk, Ateliê developed an activation connecting branding, fashion, and community experience around the fitness and lifestyle universe.",
-      image: "/events/kiosk-fit-club.jpeg",
-      gallery: [
-        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-      ],
-    },
+//    {
+//      id: "event-kiosk-fit-club-2025",
+//      title: "Kiosk Fit Club 2025",
+//      location: "Belo Horizonte",
+//      description:
+//        "In partnership with Kiosk, Ateliê developed an activation connecting branding, fashion, and community experience around the fitness and lifestyle universe.",
+//      image: "/events/kiosk-fit-club.jpeg",
+//      gallery: [
+//        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
+//      ],
+//    },
     {
       id: "event-fashion-concept-presentation",
       title: "Headtalk @rafaabritta @luiza.uluru",
@@ -148,43 +152,40 @@ export const atelieSkemaModel = {
       description:
         "A conversation with Rafa Abritta and Luiza Uluru about fashion and gastronomy, presenting concepts and correlations between these two subjects.",
       image: "/events/headtalk-card.png",
-      gallery: [
-        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-      ],
+      gallery: eventUluruGallery,
+      horizontalGalleryIndexes: [10],
+
     },
-    {
-      id: "event-luxury-talk-2026",
-      title: "Luxury Talk 2026",
-      location: "Main Auditorium",
-      description:
-        "A curated conversation and networking experience bringing together students, brands, and professionals to discuss luxury, branding, and market positioning.",
-      image:
-        "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
-      gallery: [
-        "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
-      ],
-    },
-    {
-      id: "event-editorial-launch-2026",
-      title: "Editorial Launch 2026",
-      location: "Creative Studio",
-      description:
-        "A launch event celebrating Ateliê’s new editorial direction, with visual storytelling, curated productions, and creative presentations.",
-      image:
-        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-      gallery: [
-        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-      ],
-    },
+//    {
+//      id: "event-luxury-talk-2026",
+//      title: "Luxury Talk 2026",
+//      location: "Main Auditorium",
+//      description:
+//        "A curated conversation and networking experience bringing together students, brands, and professionals to discuss luxury, branding, and market positioning.",
+//      image:
+//        "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
+//      gallery: [
+//        "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
+//      ],
+//    },
+//    {
+//      id: "event-editorial-launch-2026",
+//      title: "Editorial Launch 2026",
+//      location: "Creative Studio",
+//      description:
+//        "A launch event celebrating Ateliê’s new editorial direction, with visual storytelling, curated productions, and creative presentations.",
+//      image:
+//        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
+//      gallery: [
+//        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
+//        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
+//      ],
+//    },
   ],
   teamPhoto: "/team/time.png",
   organizersPhoto: "/team/diretoras.jpeg",

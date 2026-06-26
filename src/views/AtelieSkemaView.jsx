@@ -107,15 +107,23 @@ export default function AtelieSkemaView({
           </section>
 
           <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-6 sm:grid-cols-2 md:grid-cols-3">
-            {selectedEvent.gallery.map((image, index) => (
-              <div key={index} className="aspect-[3/4] overflow-hidden rounded-lg">
-                <img
-                  src={image}
-                  alt={`${selectedEvent.title} ${index + 1}`}
-                  className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
-                />
-              </div>
-            ))}
+            {selectedEvent.gallery.map((image, index) => {
+              const isHorizontal =
+                selectedEvent.horizontalGalleryIndexes?.includes(index);
+
+              return (
+                <div
+                  key={index}
+                  className={`${isHorizontal ? "aspect-[4/3] sm:col-span-2" : "aspect-[3/4]"} overflow-hidden rounded-lg`}
+                >
+                  <img
+                    src={image}
+                    alt={`${selectedEvent.title} ${index + 1}`}
+                    className="h-full w-full object-cover transition-transform duration-500 hover:scale-105"
+                  />
+                </div>
+              );
+            })}
           </div>
         </main>
       </div>
