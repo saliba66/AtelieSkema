@@ -56,6 +56,10 @@ const eventTheNewsGallery = Array.from(
   { length: 11 },
   (_, index) => `/events/the-news/the-news-${String(index + 1).padStart(2, "0")}.jpg`,
 );
+const backstageVideoOne =
+  import.meta.env.VITE_BACKSTAGE_VIDEO_1_URL ?? "/backstage/atelie-skema-v2.mp4";
+const backstageVideoTwo =
+  import.meta.env.VITE_BACKSTAGE_VIDEO_2_URL ?? "/backstage/skema-fashion-show-video-final.mov";
 
 export const atelieSkemaModel = {
   fontStyles: `
@@ -143,11 +147,11 @@ export const atelieSkemaModel = {
 //    },
     {
       type: "video",
-      src: "/backstage/atelie-skema-v2.mp4",
+      src: backstageVideoOne,
     },
     {
       type: "video",
-      src: "/backstage/skema-fashion-show-video-final.mov",
+      src: backstageVideoTwo,
     },
   ],
   conceptItems: [
