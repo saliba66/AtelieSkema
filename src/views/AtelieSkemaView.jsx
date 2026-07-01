@@ -106,15 +106,26 @@ export default function AtelieSkemaView({
             </h2>
           </section>
 
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-6 sm:grid-cols-2 lg:grid-cols-4">
             {selectedEvent.gallery.map((image, index) => {
+              const isDeepHorizontal =
+                selectedEvent.deepHorizontalGalleryIndexes?.includes(index);
+              const isWide =
+                selectedEvent.wideGalleryIndexes?.includes(index);
               const isHorizontal =
                 selectedEvent.horizontalGalleryIndexes?.includes(index);
+              const galleryItemClasses = isDeepHorizontal
+                ? "aspect-[9/8] sm:col-span-2"
+                : isWide
+                  ? "aspect-[16/9] sm:col-span-2 lg:col-span-3"
+                  : isHorizontal
+                    ? "aspect-[4/3] sm:col-span-2"
+                    : "aspect-[9/16]";
 
               return (
                 <div
                   key={index}
-                  className={`${isHorizontal ? "aspect-[4/3] sm:col-span-2" : "aspect-[3/4]"} overflow-hidden rounded-lg`}
+                  className={`${galleryItemClasses} overflow-hidden rounded-lg bg-[#eadfc2]`}
                 >
                   <img
                     src={image}
@@ -207,7 +218,7 @@ export default function AtelieSkemaView({
             </h2>
           </section>
 
-          <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 px-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-4 px-6 sm:grid-cols-2 lg:grid-cols-4">
             {selectedShow.gallery.map((image, index) => (
               <div key={index} className="aspect-[3/4] overflow-hidden rounded-lg">
                 <img
@@ -559,7 +570,7 @@ export default function AtelieSkemaView({
             </h2>
           </div>
 
-          <div className="mx-auto grid max-w-6xl gap-4 px-6 sm:grid-cols-2 md:grid-cols-3">
+          <div className="mx-auto grid max-w-4xl justify-center gap-4 px-6 sm:grid-cols-2">
             {backstageMedia.map((item, index) => (
               <div
                 key={index}

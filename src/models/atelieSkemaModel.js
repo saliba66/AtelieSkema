@@ -12,9 +12,49 @@ const runwayGallery2025 = Array.from(
   { length: 8 },
   (_, index) => `/runway/desfile-2025/desfile-2025-${String(index + 1).padStart(2, "0")}.jpeg`,
 );
-const eventUluruGallery = Array.from(
+const eventUluruGallery = [
+  "/events/evento-uluru/evento-uluru-02.jpeg",
+  "/events/evento-uluru/evento-uluru-03.jpeg",
+  "/events/evento-uluru/evento-uluru-07.jpeg",
+  "/events/evento-uluru/evento-uluru-06.jpeg",
+  "/events/evento-uluru/evento-uluru-04.jpeg",
+  "/events/evento-uluru/evento-uluru-08.jpeg",
+  "/events/evento-uluru/evento-uluru-09.jpeg",
+  "/events/evento-uluru/evento-uluru-10.jpeg",
+  "/events/evento-uluru/evento-uluru-11.jpeg",
+];
+const eventAntonioPicciriliGallery = Array.from(
+  { length: 6 },
+  (_, index) => `/events/antonio-piccirili/antonio-piccirili-${String(index + 1).padStart(2, "0")}.jpg`,
+);
+
+const eventAtelieExperienceGallery = [
+  "/events/atelie-experience/atelie-experience-01.jpg",
+  "/events/atelie-experience/atelie-experience-02.jpg",
+  "/events/atelie-experience/atelie-experience-04.jpg",
+  "/events/atelie-experience/atelie-experience-05.jpg",
+  "/events/atelie-experience/atelie-experience-03.jpg",
+  "/events/atelie-experience/atelie-experience-06.jpg",
+  "/events/atelie-experience/atelie-experience-07.jpg",
+  "/events/atelie-experience/atelie-experience-08.jpg",
+  "/events/atelie-experience/atelie-experience-09.jpg",
+  "/events/atelie-experience/atelie-experience-10.jpg",
+  "/events/atelie-experience/atelie-experience-11.jpg",
+];
+
+const eventBossaNovaAnaPardiniGallery = Array.from(
   { length: 11 },
-  (_, index) => `/events/evento-uluru/evento-uluru-${String(index + 1).padStart(2, "0")}.jpeg`,
+  (_, index) => `/events/bossa-nova-ana-pardini/bossa-nova-ana-pardini-${String(index + 1).padStart(2, "0")}.jpg`,
+);
+
+const eventKioskFitClubGallery = Array.from(
+  { length: 10 },
+  (_, index) => `/events/kiosk-fit-club/kiosk-fit-club-${String(index + 1).padStart(2, "0")}.jpg`,
+);
+
+const eventTheNewsGallery = Array.from(
+  { length: 11 },
+  (_, index) => `/events/the-news/the-news-${String(index + 1).padStart(2, "0")}.jpg`,
 );
 
 export const atelieSkemaModel = {
@@ -97,10 +137,10 @@ export const atelieSkemaModel = {
 //    },
   ],
   backstageMedia: [
-    {
-      type: "image",
-      src: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80",
-    },
+//    {
+//      type: "image",
+//      src: "https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80",
+//    },
     {
       type: "video",
       src: "/backstage/atelie-skema-v2.mp4",
@@ -131,20 +171,58 @@ export const atelieSkemaModel = {
     },
   ],
   events: [
-//    {
-//      id: "event-kiosk-fit-club-2025",
-//      title: "Kiosk Fit Club 2025",
-//      location: "Belo Horizonte",
-//      description:
-//        "In partnership with Kiosk, Ateliê developed an activation connecting branding, fashion, and community experience around the fitness and lifestyle universe.",
-//      image: "/events/kiosk-fit-club.jpeg",
-//      gallery: [
-//        "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-//      ],
-//    },
+    {
+      id: "event-antonio-piccirili",
+      title: "Talk Antonio Piccirili",
+      location: "Belo Horizonte",
+      description:
+        "A meeting with Antonio Piccirili focused on market perspectives, creative positioning, and conversations that connect fashion, business, and professional development.",
+      image: "/events/antonio-piccirili/antonio-piccirili-cover.jpg",
+      gallery: eventAntonioPicciriliGallery,
+      horizontalGalleryIndexes: [0, 1, 2, 3, 4, 5],
+    },
+    {
+      id: "event-atelie-experience",
+      title: "Ateliê Experience",
+      location: "Belo Horizonte",
+      description:
+        "An immersive Ateliê experience designed to bring students closer to fashion, luxury, branding, and the creative market through networking and curated moments.",
+      image: "/events/atelie-experience/atelie-experience-cover.jpg",
+      gallery: eventAtelieExperienceGallery,
+      horizontalGalleryIndexes: [0, 1, 2, 3, 6, 7, 8, 9, 10],
+    },
+    {
+      id: "event-bossa-nova-ana-pardini",
+      title: "Bossa Nova + Ana Pardini",
+      location: "Belo Horizonte",
+      description:
+        "A collaborative event with Bossa Nova and Ana Pardini, connecting style, creative entrepreneurship, and brand experience in an intimate setting.",
+      image: "/events/bossa-nova-ana-pardini/bossa-nova-ana-pardini-cover.jpg",
+      gallery: eventBossaNovaAnaPardiniGallery,
+      horizontalGalleryIndexes: [2, 3, 4, 6, 7, 8, 9, 10],
+      deepHorizontalGalleryIndexes: [2],
+      wideGalleryIndexes: [6],
+    },
+    {
+      id: "event-kiosk-fit-club-2025",
+      title: "Kiosk Fit Club 2025",
+      location: "Belo Horizonte",
+      description:
+        "In partnership with Kiosk, Ateliê developed an activation connecting branding, fashion, and community experience around the fitness and lifestyle universe.",
+      image: "/events/kiosk-fit-club/kiosk-fit-club-cover.jpg",
+      gallery: eventKioskFitClubGallery,
+      horizontalGalleryIndexes: [1, 4],
+    },
+    {
+      id: "event-the-news",
+      title: "The News",
+      location: "Belo Horizonte",
+      description:
+        "A curated encounter with The News, bringing together communication, trends, and contemporary market conversations through the Ateliê perspective.",
+      image: "/events/the-news/the-news-cover.jpg",
+      gallery: eventTheNewsGallery,
+      horizontalGalleryIndexes: [0, 1, 3, 7, 9],
+    },
     {
       id: "event-fashion-concept-presentation",
       title: "Headtalk @rafaabritta @luiza.uluru",
@@ -153,39 +231,8 @@ export const atelieSkemaModel = {
         "A conversation with Rafa Abritta and Luiza Uluru about fashion and gastronomy, presenting concepts and correlations between these two subjects.",
       image: "/events/headtalk-card.png",
       gallery: eventUluruGallery,
-      horizontalGalleryIndexes: [10],
-
+      horizontalGalleryIndexes: [2, 3, 8],
     },
-//    {
-//      id: "event-luxury-talk-2026",
-//      title: "Luxury Talk 2026",
-//      location: "Main Auditorium",
-//      description:
-//        "A curated conversation and networking experience bringing together students, brands, and professionals to discuss luxury, branding, and market positioning.",
-//      image:
-//        "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
-//      gallery: [
-//        "https://images.unsplash.com/photo-1515169067868-5387ec356754?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1511578314322-379afb476865?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1200&q=80",
-//      ],
-//    },
-//    {
-//      id: "event-editorial-launch-2026",
-//      title: "Editorial Launch 2026",
-//      location: "Creative Studio",
-//      description:
-//        "A launch event celebrating Ateliê’s new editorial direction, with visual storytelling, curated productions, and creative presentations.",
-//      image:
-//        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-//      gallery: [
-//        "https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=1200&q=80",
-//        "https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=1200&q=80",
-//      ],
-//    },
   ],
   teamPhoto: "/team/time.png",
   organizersPhoto: "/team/diretoras.jpeg",
